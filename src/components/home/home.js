@@ -29,20 +29,20 @@ class Home extends React.Component {
                   </div>
                </Carousel.Item>
 
-               {/* <Carousel.Item>
-                  <div className="carousel-2">
+               <Carousel.Item>
+                  <div className="carousel carousel-2">
 
-                     <div className="caption-2">
-                        <h1>Don't Want A Basket, <br /> How About A Box?</h1>
-                        <p>I Mean... Why The Hell Not?</p>
+                     <div className="caption caption-2">
+                        <h1>Maybe Something Mellow and Yellow? </h1>
+                        <p>For Comfort and Warmness</p>
                      </div>
 
-                     <div>
-                        <img src={require('../assets/other/other-2.png')} alt="First slide" />
+                     <div className="carousel-img">
+                        <img src={require('../assets/vase/vase-yellow.png')} alt="First slide" />
                      </div>
 
                   </div>
-               </Carousel.Item> */}
+               </Carousel.Item>
 
                {/* <Carousel.Item>
                   <div className="carousel-3">
