@@ -92,19 +92,20 @@ $logo-text-shadow2:
    .header {
       display: flex;
       justify-content: center;
-      height: auto;
+      height: 200px;
    }
    .logo {
       height: 200px;
-      background-size: 300px;
-      margin: 0 auto;
+      background-size: 300px; 
+      background-position: center;
       h1 {
+         text-align: center;
          padding: 0;
          margin: 0;
-         font-size: 28px;
+         font-size: 27px;
          top: 88px;
          position: relative;
-         left: 38px;
+         left: 3.5px;
       }
    }
 }
