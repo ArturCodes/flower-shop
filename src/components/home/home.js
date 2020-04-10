@@ -44,18 +44,21 @@ class Home extends React.Component {
                   </div>
                </Carousel.Item>
 
-               {/* <Carousel.Item>
-                  <div className="carousel-3">
-                     <img src={require('../assets/other/other-4.png')}
-                        alt="First slide" />
-                     <Carousel.Caption>
-                           <div className="caption-3">
-                              <h3>First slide label</h3>
-                              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                           </div>
-                     </Carousel.Caption>
+               <Carousel.Item>
+                  <div className="carousel carousel-3">
+
+                     <div className="carousel-img">
+                        <img src={require('../assets/bg/2.png')}
+                           alt="First slide" />
+                     </div>
+
+                     <div className="caption caption-3">
+                        <h1>Flowers to Anywhere and Anytime <br/> for the low low price of</h1>
+                        <p>2 Limbs and a Liver</p>
+                     </div>
+
                   </div>
-               </Carousel.Item> */}
+               </Carousel.Item>
 
             </Carousel>
             <Footer />

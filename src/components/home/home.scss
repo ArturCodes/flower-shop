@@ -15,12 +15,17 @@ $text-shadow2: -2px -2px $shadow-spread $text-color2, 2px -2px $shadow-spread $t
    margin: 25px 0;
 }
 
+
+// ****************************************
+//            Carousel Commons
+// ****************************************
+
 .carousel {
    height: 500px;
    background-color: rgb(3, 46, 82);
    background-image: url("../assets/textures/pixel-weave.png");
    background-size: 55px;
-
+   
    display: flex;
    align-items: center;
    text-align: center;
@@ -43,7 +48,7 @@ $text-shadow2: -2px -2px $shadow-spread $text-color2, 2px -2px $shadow-spread $t
    }
 }
 
-// ████████████████████████████████████████████████████████████
+// ------------------------------------------ 
 
 .carousel-1 {
    .carousel-img {
@@ -58,7 +63,7 @@ $text-shadow2: -2px -2px $shadow-spread $text-color2, 2px -2px $shadow-spread $t
    }
 }
 
-// ████████████████████████████████████████████████████████████
+// ------------------------------------------ 
 
 .carousel-2 {
    .carousel-img {
@@ -69,39 +74,19 @@ $text-shadow2: -2px -2px $shadow-spread $text-color2, 2px -2px $shadow-spread $t
    }
 }
 
-// .caption-2 {
-//    display: flex;
-//    flex-direction: column;
-//    justify-content: center;
-//    color: black;
-//    h1 {
-//       // align-self: center;
-//       color: rgb(255, 255, 255);
-//       text-shadow: $text-shadow;
-//    }
-//    p {
-//       color: rgb(4, 107, 121);
-//       text-shadow: $text-shadow2;
-//       font-size: 20px;
-//       font-weight: 800;
-//    }
-// }
-
-// ████████████████████████████████████████████████████████████
+// ------------------------------------------ 
 
 .carousel-3 {
    .carousel-img {
-      img {
+   img {
          height: 400px;
       }
    }
-   .caption-3 {
-      color: black;
-      position: relative;
-      bottom: 50px;
-      font-size: 20px;
-   }
 }
+
+// ****************************************
+//         Carousel Media Screen 
+// ****************************************
 
 @media screen and (max-width: 1000px) {
    .carousel-wrapper {
@@ -111,6 +96,7 @@ $text-shadow2: -2px -2px $shadow-spread $text-color2, 2px -2px $shadow-spread $t
       display: flex;
       flex-direction: column;
       text-align: center;
+      padding: 5px;
       .carousel-img {
          img {
             height: 250px;
@@ -121,7 +107,7 @@ $text-shadow2: -2px -2px $shadow-spread $text-color2, 2px -2px $shadow-spread $t
          width: auto;
       }
    }
-
+   
    .carousel-2 {
       flex-direction: column-reverse;
       .carousel-img {
@@ -129,6 +115,6 @@ $text-shadow2: -2px -2px $shadow-spread $text-color2, 2px -2px $shadow-spread $t
             margin-left: 0;
          }
       }
-   
+      
    }
 } // media Screen
