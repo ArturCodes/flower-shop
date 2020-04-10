@@ -110,14 +110,13 @@ $text-shadow2: -2px -2px $shadow-spread $text-color2, 2px -2px $shadow-spread $t
       margin: 25px 0;
    }
    .carousel {
-      height: auto;
       display: flex;
       flex-direction: column;
       text-align: center;
       .carousel-img {
-         position: relative;
-         top: 15px;
-         height: 100px;
+         img {
+            height: 250px;
+         }
       }
       .caption {
          font-size: 16px;
