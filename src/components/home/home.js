@@ -53,7 +53,7 @@ class Home extends React.Component {
                      </div>
 
                      <div className="caption caption-3">
-                        <h1>Flowers to Anywhere and Anytime <br/> for the low low price of</h1>
+                        <h1>Flowers to Anywhere and Anytime <br/> for the low price of</h1>
                         <p>2 Limbs and a Liver</p>
                      </div>
 
