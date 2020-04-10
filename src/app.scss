@@ -1,0 +1,24 @@
+html,
+body {
+   margin: 0;
+   padding: 0;
+}
+
+.global-wrapper {
+   background-image: url("./components/assets/bg/4.png");
+   background-repeat: no-repeat;
+   background-position: top right;
+   background-size: 400px;
+}
+
+.app-wrapper {
+   margin: 0 auto;
+   padding: 0;
+   width: 90%;
+}
+
+@media screen and (max-width: 800px) {
+   .global-wrapper {
+      background-image: none;
+   }
+}

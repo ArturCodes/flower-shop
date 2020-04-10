@@ -1,0 +1,110 @@
+
+$logo-color: #155552;
+$logo-text-shadow: 
+-0.5px -0.5px 1px $logo-color,  
+0.5px -0.5px 1px $logo-color,
+-0.5px 0.5px 1px $logo-color,
+0.5px 0.5px 1px $logo-color;
+
+// Hover Shadow
+$logo-color2: rgb(0, 0, 0);
+$logo-text-shadow2: 
+-0.5px -0.5px 1px $logo-color2,  
+ 0.5px -0.5px 1px $logo-color2,  
+ -0.5px 0.5px 1px $logo-color2,  
+  0.5px 0.5px 1px $logo-color2;
+
+
+
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   height: 250px;
+}
+
+.logo {
+   font-family: "Cinzel Decorative", cursive;
+   width: 350px;
+   background-image: url("../assets/bg/banner1.png");
+   background-repeat: no-repeat;
+   background-size: 350px;
+   h1 {
+      font-size: 32px;
+      position: relative;
+      top: 103px;
+      left: 45px;
+      text-shadow: $logo-text-shadow;
+      a {
+         color: #77cece;
+         text-decoration: none;
+         &:hover {
+            // color: rgb(14, 186, 209);
+            text-shadow: $logo-text-shadow2;
+         }
+      }
+   }
+}
+.hours {
+   font-family: "Merienda", cursive;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   li {
+      list-style: none;
+      text-decoration: none;
+   }
+}
+
+.contact {
+   display: flex;
+   height: 100%;
+
+   span {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      align-self: flex-end;
+      padding-bottom: 5px;
+      a {
+         color: rgb(231, 227, 227);
+         list-style: none;
+         text-decoration: none;
+         &:hover {
+            color: rgb(36, 36, 36);
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .hours,
+   .contact {
+      display: none;
+   }
+   .logo {
+      margin: 0 auto;
+   }
+   .navlink {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   .header {
+      display: flex;
+      justify-content: center;
+      height: auto;
+   }
+   .logo {
+      height: 200px;
+      background-size: 300px;
+      margin: 0 auto;
+      h1 {
+         padding: 0;
+         margin: 0;
+         font-size: 28px;
+         top: 88px;
+         position: relative;
+         left: 38px;
+      }
+   }
+}

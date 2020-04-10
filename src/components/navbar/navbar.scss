@@ -1,0 +1,80 @@
+.nav-wrapper {
+   border-top: 2px lightgrey solid;
+   border-bottom: 2px lightgrey solid;
+   font-family: "Merienda", cursive;
+   ul {
+      display: flex;
+      justify-content: space-evenly;
+      li {
+         position: relative;
+         top: 7px;
+         list-style: none;
+         flex-direction: row;
+         font-weight: 500;
+         a {
+            text-decoration: none;
+            color: lightseagreen;
+            padding: 0 10px;
+            &:hover {
+               color: rgb(15, 75, 72);
+               font-weight: 600;
+            }
+         }
+      }
+   }
+}
+
+.arrow-down {
+   position: relative;
+   top: 0px;
+}
+
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   width: 800px;
+   height: auto;
+   background-color: white;
+   box-shadow: 0 2px 8px 0px;
+   flex-direction: row;
+   justify-content: space-around;
+   align-content: space-around;
+   align-items: stretch;
+   left: -500px;
+   z-index: 1;
+   
+   div:nth-child(1) {
+      background-color: rgb(184, 200, 206);
+      padding: 50px;
+      width: 50%;
+      background-image: url('../assets/bg/1.png');
+      background-size: 110px;
+      background-repeat: no-repeat;
+      background-position: bottom right;
+   }
+   div:nth-child(2) {
+      width: 50%;
+      background: rgb(240, 235, 188);
+      padding: 50px;
+      align-self: stretch;
+      background-image: url(../assets/bg/5.png);
+      background-repeat: no-repeat;
+      background-size: 100px;
+      background-position: right top;
+   }
+}
+
+.dropdown:hover .dropdown-content {
+   display: flex;
+}
+
+@media screen and (max-width: 800px) {
+   .navlink {
+      display: none;
+   }
+}
