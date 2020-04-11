@@ -13,7 +13,6 @@ class Home extends React.Component {
          <div className="home-wrapper">
 
             <Carousel className="carousel-wrapper">
-               {/* -------------------------------- */}
                <Carousel.Item>
                   <div className="carousel carousel-1">
 
@@ -29,7 +28,6 @@ class Home extends React.Component {
 
                   </div>
                </Carousel.Item>
-               {/* -------------------------------- */}
                <Carousel.Item>
                   <div className="carousel carousel-2">
 
@@ -44,12 +42,11 @@ class Home extends React.Component {
 
                   </div>
                </Carousel.Item>
-               {/* -------------------------------- */}
                <Carousel.Item>
                   <div className="carousel carousel-3">
 
                      <div className="carousel-img">
-                        <img src={require('../assets/bouquet/bouquet-5.png')}
+                        <img src={require('../assets/vase/vase-purple.png')}
                            alt="First slide" />
                      </div>
 
@@ -57,7 +54,7 @@ class Home extends React.Component {
                         <h1>Anything you desire<br /> for the low price of</h1>
                         <p>2 Limbs and a Liver</p>
                      </div>
-
+                     
                   </div>
                </Carousel.Item>
             </Carousel>

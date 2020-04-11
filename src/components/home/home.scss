@@ -15,7 +15,6 @@ $text-shadow2: -2px -2px $shadow-spread $text-color2, 2px -2px $shadow-spread $t
    margin: 25px 0;
 }
 
-
 // ****************************************
 //            Carousel Commons
 // ****************************************
@@ -25,7 +24,7 @@ $text-shadow2: -2px -2px $shadow-spread $text-color2, 2px -2px $shadow-spread $t
    background-color: rgb(3, 46, 82);
    background-image: url("../assets/textures/pixel-weave.png");
    background-size: 55px;
-   
+
    display: flex;
    align-items: center;
    text-align: center;
@@ -48,7 +47,7 @@ $text-shadow2: -2px -2px $shadow-spread $text-color2, 2px -2px $shadow-spread $t
    }
 }
 
-// ------------------------------------------ 
+// ------------------------------------------
 
 .carousel-1 {
    .carousel-img {
@@ -59,11 +58,10 @@ $text-shadow2: -2px -2px $shadow-spread $text-color2, 2px -2px $shadow-spread $t
    .caption-1 {
       color: black;
       padding-left: 25px;
-      
    }
 }
 
-// ------------------------------------------ 
+// ------------------------------------------
 
 .carousel-2 {
    .carousel-img {
@@ -74,18 +72,18 @@ $text-shadow2: -2px -2px $shadow-spread $text-color2, 2px -2px $shadow-spread $t
    }
 }
 
-// ------------------------------------------ 
+// ------------------------------------------
 
 .carousel-3 {
    .carousel-img {
-   img {
-         height: 450px;
+      img {
+         height: 600px;
       }
    }
 }
 
 // ****************************************
-//         Carousel Media Screen 
+//         Carousel Media Screen
 // ****************************************
 
 @media screen and (max-width: 1000px) {
@@ -107,7 +105,7 @@ $text-shadow2: -2px -2px $shadow-spread $text-color2, 2px -2px $shadow-spread $t
          width: auto;
       }
    }
-   
+
    .carousel-2 {
       flex-direction: column-reverse;
       .carousel-img {
@@ -115,6 +113,5 @@ $text-shadow2: -2px -2px $shadow-spread $text-color2, 2px -2px $shadow-spread $t
             margin-left: 0;
          }
       }
-      
    }
 } // media Screen
