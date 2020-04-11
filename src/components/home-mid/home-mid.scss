@@ -34,10 +34,8 @@
    padding: 0 125px;
    background-image: url("../assets/bg/13.png");
    background-size: 250px;
-   background-size: cover;
    background-position: top left;
 }
-
 
 @media screen and (max-width: 1000px) {
    .home-mid-wrapper {
@@ -46,10 +44,21 @@
       .mid-right, .mid-left {
          width: 100%;
          margin: 0;
-         background-color: white;
+         padding: 0;
+         p {
+            font-weight: 400;
+         }
       }
+      .mid-right {
+         margin-top: 25px;
+         background-size: 600px;
+      }
+
       .mid-text-wrapper {
-         background-color: rgba(201, 104, 240, 0.616);
+         font-weight: 700;
+         color: black;
+         width: 100%;
+         background-color: #f0ebbcbb
       }
    }
 }

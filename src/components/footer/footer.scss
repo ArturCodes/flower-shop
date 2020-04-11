@@ -1,8 +1,7 @@
 .footer-wrapper {
-   min-height: 300px;
+   min-height: 500px;
    background-image: url('../assets/bg/9.png');
-   background-position: bottom;
-   background-position-x: 670px;
+   background-position: bottom center;
    background-size: 300px;
    width: 100%;
    margin: 0 auto;
@@ -11,20 +10,8 @@
    border-top: 1px solid lightgrey;
    box-sizing: border-box;
 }
+ 
 
-.text-wrapper {
-   width: 80%;
-   height: 200px;
-   margin: 0 auto;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-content: center;
-   .site-purpose {
-      width: 50%;   
-      align-self: center;
-   }
-   .social-media {
-      display: flex;
-   }
+@media screen and (max-width: 1000px) {
+ 
 }
