@@ -2,6 +2,7 @@ import React from "react"
 import "./home.scss"
 import Carousel from "react-bootstrap/Carousel"
 import Footer from "../footer/footer"
+import HomeMid from '../home-mid/home-mid'
 
 class Home extends React.Component {
 
@@ -12,7 +13,7 @@ class Home extends React.Component {
          <div className="home-wrapper">
 
             <Carousel className="carousel-wrapper">
-
+               {/* -------------------------------- */}
                <Carousel.Item>
                   <div className="carousel carousel-1">
 
@@ -28,7 +29,7 @@ class Home extends React.Component {
 
                   </div>
                </Carousel.Item>
-
+               {/* -------------------------------- */}
                <Carousel.Item>
                   <div className="carousel carousel-2">
 
@@ -43,24 +44,26 @@ class Home extends React.Component {
 
                   </div>
                </Carousel.Item>
-
+               {/* -------------------------------- */}
                <Carousel.Item>
                   <div className="carousel carousel-3">
 
                      <div className="carousel-img">
-                        <img src={require('../assets/bg/2.png')}
+                        <img src={require('../assets/bouquet/bouquet-5.png')}
                            alt="First slide" />
                      </div>
 
                      <div className="caption caption-3">
-                        <h1>Flowers to Anywhere and Anytime <br/> for the low price of</h1>
+                        <h1>Anything you desire<br /> for the low price of</h1>
                         <p>2 Limbs and a Liver</p>
                      </div>
 
                   </div>
                </Carousel.Item>
-
             </Carousel>
+
+            <HomeMid />
+
             <Footer />
          </div>
       )
