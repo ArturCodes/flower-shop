@@ -12,7 +12,7 @@ const HomeMid = () => {
          </div>
          <div className="mid-right">
             <div className="mid-text-wrapper">
-               <h1>Smoodies</h1>
+               <h1>Moodies</h1>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rem odio aliquam culpa. Iure amet non laborum eveniet maxime voluptates similique repellat reprehenderit earum.</p>
             </div>
          </div>
