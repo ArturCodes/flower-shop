@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from 'react'
 import './footer.scss'
+import { FaFacebookSquare, FaTwitterSquare, FaGooglePlusSquare, FaRedditSquare, FaPinterestSquare, FaTumblrSquare, FaInstagram, FaFlickr } from "react-icons/fa"
 
 const Footer = () => {
    return (
@@ -22,14 +23,30 @@ const Footer = () => {
             </div>
          </div>
 
+         {/* --------------------------------------------- */}
          <div className="footer-right">
-            <div className>
+            <div className="media">
+               <p>Find Us On</p>
+               <ul>
+                  <div> <FaFacebookSquare /> Facebook</div>
+                  <div> <FaTwitterSquare /> Twitter</div>
+                  <div> <FaGooglePlusSquare /> Google+</div>
+                  <div> <FaRedditSquare /> Reddit</div>
+               </ul>
+               <ul>
+                  <div> <FaPinterestSquare /> Pinterest</div>
+                  <div> <FaTumblrSquare /> Tumblr</div>
+                  <div> <FaInstagram /> Instagram</div>
+                  <div> <FaFlickr /> Flickr</div>
+               </ul>
+            </div>
+            <div className="info">
+
             </div>
          </div>
-
       </div>
 
-      
+
    )
 }
 
