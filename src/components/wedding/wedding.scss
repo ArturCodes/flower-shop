@@ -1,6 +1,6 @@
 .wedding-wrapper {
    border-top: 2px lightgrey solid;
-   padding: 25px;
+   padding: 75px;
    display: flex;
    align-items: center;
    .wed-info {
@@ -41,6 +41,7 @@
    .wedding-wrapper {
       display: flex;
       flex-direction: column;
+      padding: 25px 50px;
       img {
          margin: 0 auto;
          padding: 25px;
@@ -54,6 +55,7 @@
 @media screen and (max-width: 1000px) {
    .wedding-wrapper {
       flex-direction: column;
+      padding: 25px 0;
       .wed-info {
          background-position: center;
          width: auto;

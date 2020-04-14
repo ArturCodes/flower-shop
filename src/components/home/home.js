@@ -4,6 +4,7 @@ import Carousel from "react-bootstrap/Carousel"
 import Footer from "../footer/footer"
 import HomeMid from '../home-mid/home-mid'
 import Wedding from "../wedding/wedding"
+import Copyright from "../copyright/copyright"
 
 class Home extends React.Component {
 
@@ -65,6 +66,8 @@ class Home extends React.Component {
             <HomeMid />
 
             <Footer />
+
+            <Copyright />
          </div>
       )
    }
