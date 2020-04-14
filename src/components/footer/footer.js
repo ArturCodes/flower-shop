@@ -40,9 +40,6 @@ const Footer = () => {
                   <div> <FaFlickr /> Flickr</div>
                </ul>
             </div>
-            <div className="info">
-
-            </div>
          </div>
       </div>
 

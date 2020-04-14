@@ -3,6 +3,7 @@ import "./home.scss"
 import Carousel from "react-bootstrap/Carousel"
 import Footer from "../footer/footer"
 import HomeMid from '../home-mid/home-mid'
+import Wedding from "../wedding/wedding"
 
 class Home extends React.Component {
 
@@ -59,6 +60,8 @@ class Home extends React.Component {
                </Carousel.Item>
             </Carousel>
 
+            <Wedding />
+            
             <HomeMid />
 
             <Footer />
