@@ -4,9 +4,10 @@ import './copyright.scss'
 const Copyright = () => {
    return (
       <div className="copyright-wrapper">
-         <a href="artur-shapiro.netlify.com">
-            &copy; Created by Artur Shapiro 2020
-            </a>
+         <a href="https://artur-shapiro.netlify.com/">
+            Created by Artur Shapiro -  
+            Last updated on 4/14/20
+         </a>
       </div>
    )
 }
