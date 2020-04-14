@@ -1,9 +1,9 @@
 import React from "react"
-import './lorem.scss'
+import './lorem-block.scss'
 
 const LoremBlocks = () => {
    return (
-      <div>
+      <div className="lorem-block-wrapper">
          <span className="greyed">Lorem</span>
          <span className="greyed">ipsum</span>
          <span className="greyed">dolor</span>
