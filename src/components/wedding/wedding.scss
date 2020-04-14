@@ -32,3 +32,42 @@
       height: 450px;
    }
 }
+
+@media screen and (max-width: 1500px) and (min-width: 1000px) {
+   .wedding-wrapper {
+      display: flex;
+      flex-direction: column;
+      img {
+         margin: 0 auto;
+         padding: 25px;
+      }
+      .wed-info {
+         width: 70%;
+      }
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .wedding-wrapper {
+      flex-direction: column;
+      .wed-info {
+         width: auto;
+         p,
+         h2,
+         div {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.85);
+         }
+         div {
+            padding: 10px 0;
+            margin: 0;
+         }
+      }
+      img {
+         margin: 0 auto;
+         padding: 20px 0;
+         height: auto;
+         width: 100%;
+      }
+   }
+}
