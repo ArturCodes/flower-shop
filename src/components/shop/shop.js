@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import './shop.scss'
 import Footer from "../footer/footer"
 // import Filter from './filter/filter'
+import Flowers from "./flowers/flowers"
 
 export default class Shop extends Component {
    maxId = 0
@@ -29,11 +30,10 @@ export default class Shop extends Component {
          this.flowerData("Moon Bloom", "40", "Vase", "White", 'vase/v8.png'),
          this.flowerData("Doue Yawn", "40", "Vase", "Multicolor", 'vase/v9.png'),
       ],
-      filter: '',
-      color: 'all',
-      type: 'all',
+      color: 'All',
+      type: 'All',
       cart: '',
-      visibleItems: ''
+      visibleItems: 'All'
    }
 
    flowerData(name, price, type, colors, src) {
@@ -65,48 +65,39 @@ export default class Shop extends Component {
       const propType = e.target.id
       const PropValue = e.target.value
 
-      const filtered = flowers.filter(item => item[propType] === PropValue)
+      const filtered = flowers.filter(item => {
+         return item[propType] === PropValue
+      })
+
       console.log(filtered)
 
-      this.setState({
-         [propType]: PropValue, // sets state for Color and Type
-         visibleItems: filtered
-      })
+      if (PropValue === "All") {
+         this.setState({
+            [propType]: 'All',  
+            visibleItems: 'All'
+         })
+      } else {
+
+         this.setState({
+            [propType]: PropValue, 
+            visibleItems: filtered
+         })
+      }
+
    }
 
 
-
-
    render() {
-      const { flowers, color, type, } = this.state
+      const { color, type, flowers, visibleItems } = this.state
 
-      const mappedFlowers = flowers.map((item) => {
-         const { name, price, type, src, color, id } = item
-
-         return (
-            <div className="mappedFlowers" key={id}>
-               <div className="info">
-                  <h4>{name}</h4>
-                  <div>Price: ${price}</div>
-                  <div>Type: {type}</div>
-                  <div>Colors: {color}</div>
-               </div>
-               <div className="img">
-                  <img src={require(`./flowers/${src}`)} alt={`{name}`} />
-               </div>
-               <div className="btn">
-                  <button onClick={() => this.addToCart(id)}>Add To Cart</button>
-               </div>
-            </div>
-         )
-      })
-
+      const visible = (visibleItems === 'All') ? 
+      <Flowers data={flowers} onAddToCart={this.addToCart}/> : 
+      <Flowers data={visibleItems} onAddToCart={this.addToCart} />
 
       return (
          <div>
-            {/* ████████████████████████████████
-               Couldn't get the component props passed / get the state to work. 
-            So I just brought he whole Filter component here x_x */}
+
+            {/* Filter Component - which i had trouble seperating to its own component */}
             <div className="filter-wrappper">
                <form className="color-filter">
                   <label htmlFor="color">Sort by Color: </label>
@@ -129,11 +120,9 @@ export default class Shop extends Component {
                   </select>
                </form>
             </div>
-            {/* If i figure it out, ill refactor this code later */}
-            {/* ████████████████████████████████ */}
 
             <div className="shop-wrapper">
-               {mappedFlowers}
+               {visible}
             </div>
 
             <Footer />
@@ -141,4 +130,31 @@ export default class Shop extends Component {
       )
    }
 
-} 
+}
+
+
+
+
+
+      // const mappedVisibleItems = flowers.map((item) => {
+      //    const { name, price, type, src, color, id } = item
+
+      //    return (
+      //       <div className="mappedFlowers" key={id}>
+      //          <div className="info">
+      //             <h4>{name}</h4>
+      //             <div>Price: ${price}</div>
+      //             <div>Type: {type}</div>
+      //             <div>Colors: {color}</div>
+      //          </div>
+      //          <div className="img">
+      //             <img src={require(`./flowers/${src}`)} alt={`{name}`} />
+      //          </div>
+      //          <div className="btn">
+      //             <button onClick={() => this.addToCart(id)}>Add To Cart</button>
+      //          </div>
+      //       </div>
+      //    )
+      // })
+
+      // console.log(mappedVisibleItems)
