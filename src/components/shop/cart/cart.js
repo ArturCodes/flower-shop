@@ -1,14 +1,16 @@
-import React from "react"  
+import React from "react"
 import '../cart/cart.scss'
 
-const Cart = () => {
-   return(
+const Cart = ({cartData}) => {
 
-      <div>
-         cart component
-      </div>
-      
+   return (
+      <>
+         <button className="btn btn-sm btn-outline-dark">
+            View Cart
+         </button>
+      </>
+
    )
-}  
+}
 
 export default Cart

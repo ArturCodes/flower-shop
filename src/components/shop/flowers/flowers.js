@@ -4,6 +4,7 @@ import "./flowers.scss"
 
 const Flowers = ({data, onAddToCart}) => {
 
+    
 
    const mappedItems = data.map((item) => {
       const { name, price, type, src, color, id } = item
@@ -20,7 +21,7 @@ const Flowers = ({data, onAddToCart}) => {
                <img src={require(`./${src}`)} alt={`{name}`} />
             </div>
             <div className="btn">
-               <button onClick={(id) => this.onAddToCart(id)}>Add To Cart</button>
+               <button onClick={() => onAddToCart(id)}>Add To Cart</button>
             </div>
          </div>
       )
