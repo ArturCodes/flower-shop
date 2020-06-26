@@ -6,7 +6,7 @@ const Copyright = () => {
       <div className="copyright-wrapper">
          <a href="https://artur-shapiro.netlify.com/">
             Created by Artur Shapiro -  
-            Last updated on 4/14/20
+            Last updated on 6/26/20
          </a>
       </div>
    )
